@@ -8,6 +8,10 @@ function Login() {
         navigate('/registro');
     };
 
+    const rutaHome = () => {
+        navigate('/home');
+    }
+
     return (
         <div className='login-page'>
             <section className="login-container">
@@ -18,7 +22,7 @@ function Login() {
                         <label htmlFor="password">Contraseña</label>
                         <input type="text" id="password" placeholder="Ingresa tu contraseña" />
                         <div className='buttons'>
-                            <button type="button" className="login">Iniciar Sesión</button>
+                            <button onClick={(e) => {e.preventDefault(); rutaHome(); }} type="button" className="login">Iniciar Sesión</button>
                             <button onClick={(e) => { e.preventDefault(); rutaRegistro(); }} type="button" className="register">Únete a nuestra comunidad</button>
                     </div>
                 </form>

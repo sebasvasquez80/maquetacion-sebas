@@ -24,7 +24,7 @@ function Registro() {
                         <label htmlFor="email">Correo</label>
                         <input type="text" id="email" placeholder="Ingresa el correo" />
                         <div className="Buttons">
-                            <button type="button" className="register">Registrarse</button>
+                            <button onClick={(e) => { e.preventDefault(); rutaLogin(); }} type="button" className="register">Registrarse</button>
                         </div>
                     <span className="return-login"> ¿Ya tienes una cuenta?
                         <label onClick={(e) => { e.preventDefault(); rutaLogin(); }} htmlFor="login" className="button-Login"> Iniciar sesión </label>

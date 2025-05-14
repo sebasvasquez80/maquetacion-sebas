@@ -1,0 +1,110 @@
+.contacto-page {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-left: 300px;
+  padding-right: 300px;
+  background-color: rgb(238, 231, 249);
+  min-height: 100vh;
+}
+
+.titulo{
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(42, 42, 61);
+  font-size: 150%;
+}
+
+.contacto-container{
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-titulo{
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto-form label{
+    margin-bottom: 8px;
+    font-weight: bold;
+    color:  rgb(42, 42, 61);
+    display: block;
+}
+
+.contacto-form input{
+  padding: 0.75rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background: #F9FAFB;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.contacto-form input:focus {
+  outline: none;
+  border-color:  rgb(42, 42, 61);
+  box-shadow: 0 0 8px rgb(42, 42, 61);
+}
+
+.mensaje{
+    height: 150px
+}
+
+.buttons{
+    margin-top: 2px;
+}
+
+.contacto-form button.enviar{
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(to right, rgb(75, 54, 75),rgb(42, 42, 61));
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px
+}
+
+.contacto-directo{
+    margin-top: 25px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contacto-directo h3{
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.contacto-link{
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  color:  #1F2937;
+}
